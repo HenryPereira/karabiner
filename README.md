@@ -27,19 +27,19 @@ You probably don't want to use my exact configuration, as it's optimized for my 
 ## Development
 
 ```
-yarn install
+npm install
 ```
 
 to install the dependencies. (one-time only)
 
 ```
-yarn run build
+npm run build
 ```
 
 builds the `karabiner.json` from the `rules.ts`.
 
 ```
-yarn run watch
+npm run watch
 ```
 
 watches the TypeScript files and rebuilds whenever they change.

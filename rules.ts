@@ -82,7 +82,7 @@ const rules: KarabinerRules[] = [
       e: app("Mail"),
       v: app("Visual Studio Code"),
       w: app("Windsurf"),
-      t: app("Terminal"),
+      t: app("Warp"),
       // "A"I
       a: app("ChatGPT"),
       p: app("Perplexity"),
