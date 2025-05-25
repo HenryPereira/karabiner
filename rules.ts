@@ -74,24 +74,19 @@ const rules: KarabinerRules[] = [
       1: app("1Password"),
       s: app("Safari"),
       g: app("Google Chrome"),
-      // "M"usic via Spotify
-      m: app("Spotify"),
-      // To"D"oist
-      d: app("Todoist"),
-      // "E"mail
-      e: app("Mail"),
+      m: app("Spotify"), // "M"usic via Spotify
+      d: app("Todoist"), // To"D"oist
+      e: app("Mail"), // "E"mail
       v: app("Visual Studio Code"),
       w: app("Windsurf"),
-      t: app("Warp"),
-      // "A"I
-      a: app("ChatGPT"),
+      t: app("Ghostty"),
+      a: app("ChatGPT"), // "A"I
       p: app("Perplexity"),
       f: app("Finder"),
       i: app("Messages"),
       n: app("Notes"),
       c: app("Notion Calendar"),
-      // Linea"R"
-      r: app("Linear"),
+      r: app("Linear"), // Linea"R"
     },
 
     // w = "Window" via rectangle.app
