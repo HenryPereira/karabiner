@@ -1,6 +1,6 @@
 import fs from "fs";
 import { KarabinerRules } from "./types";
-import { app, createHyperSubLayers, open, rectangle } from "./utils";
+import { app, createHyperSubLayers, open, window } from "./utils";
 
 const rules: KarabinerRules[] = [
   // Define the Hyper key itself
@@ -76,26 +76,17 @@ const rules: KarabinerRules[] = [
       n: app("Notes"),
     },
 
-    // w = "Window" via rectangle.app
+    // w = "Window"
     w: {
-      h: {
-        description: "Window: Hide",
-        to: [
-          {
-            key_code: "h",
-            modifiers: ["right_command"],
-          },
-        ],
-      },
-      j: rectangle("previous-display"),
-      semicolon: rectangle("next-display"),
-      k: rectangle("left-half"),
-      l: rectangle("right-half"),
-      "return_or_enter": rectangle("maximize"),
-      u: rectangle("first-third"),
-      p: rectangle("last-third"),
-      i: rectangle("first-two-thirds"),
-      o: rectangle("last-two-thirds"),
+      return_or_enter: window("maximize"),
+      k: window("left-half"),
+      l: window("right-half"),
+      j: window("previous-display"),
+      semicolon: window("next-display"),
+      u: window("first-third"),
+      i: window("first-two-thirds"),
+      o: window("last-two-thirds"),
+      p: window("last-third"),
       n: {
         description: "Window: Previous Tab",
         to: [
@@ -131,7 +122,7 @@ const rules: KarabinerRules[] = [
             modifiers: ["right_command", "right_shift"],
           }
         ]
-      }
+      },
     },
 
     // s = "System"
