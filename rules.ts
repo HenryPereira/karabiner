@@ -74,6 +74,8 @@ const rules: KarabinerRules[] = [
       f: app("Finder"),
       m: app("Messages"),
       n: app("Notes"),
+      d: app("Todoist"),
+      c: app("Notion Calendar"),
     },
 
     // w = "Window"
