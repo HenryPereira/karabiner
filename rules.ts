@@ -76,6 +76,7 @@ const rules: KarabinerRules[] = [
       n: app("Notes"),
       d: app("Todoist"),
       c: app("Notion Calendar"),
+      x: app("Codex"),
     },
 
     // w = "Window"
