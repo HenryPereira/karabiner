@@ -3,6 +3,33 @@ import { KarabinerRules } from "./types";
 import { app, createHyperSubLayers, open, window } from "./utils";
 
 const rules: KarabinerRules[] = [
+  {
+    description: "Hyper Key + Quote -> Backtick",
+    manipulators: [
+      {
+        description: "Hyper Key + Quote -> Backtick",
+        type: "basic",
+        from: {
+          key_code: "quote",
+          modifiers: {
+            optional: ["any"],
+          },
+        },
+        to: [
+          {
+            key_code: "grave_accent_and_tilde",
+          },
+        ],
+        conditions: [
+          {
+            type: "variable_if",
+            name: "hyper",
+            value: 1,
+          },
+        ],
+      },
+    ],
+  },
   // Define the Hyper key itself
   {
     description: "Hyper Key (⌃⌥⇧⌘)",
