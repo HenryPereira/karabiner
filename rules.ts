@@ -100,7 +100,7 @@ const rules: KarabinerRules[] = [
       t: app("Ghostty"),
       f: app("Finder"),
       m: app("Messages"),
-      n: app("Notes"),
+      n: app("Obsidian"),
       c: app("Notion Calendar"),
       d: app("ChatGPT"),
       e: app("Zed"),
